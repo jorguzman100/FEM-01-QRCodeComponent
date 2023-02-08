@@ -1,0 +1,32 @@
+// Import the Bootstrap source files
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main { grid-area: main; }
+footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'main'
+    'footer';
+  row-gap: 10px;
+  transition: 2s;
+  justify-content: center;
+  background-color: lightgray;
+}
+
+.layout {
+  text-align: center;
+}
+
+section {
+    display: grid;
+    border: 2px solid white;
+}
+
